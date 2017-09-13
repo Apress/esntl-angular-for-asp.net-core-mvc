@@ -1,0 +1,29 @@
+﻿<table *ngIf="orders?.length > 0; else nodata" class="table table-striped">
+    <tr>
+        <th>Customer</th>
+        <th>Address</th>
+        <th>Products</th>
+        <th>Total</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let o of orders">
+        <td>{{o.name}}</td>
+        <td>{{o.address}}</td>
+        <td>{{o.products.length}}</td>
+        <td>{{o.payment.total | currency:USD:true}}</td>
+        <td *ngIf="!o.shipped; else shipped">
+            <button class="btn btn-sm btn-primary"
+                    (click)="markShipped(o)">
+                Ship
+            </button>
+        </td>
+    </tr>
+</table>
+
+<ng-template #shipped>
+    <td>Shipped</td>
+</ng-template>
+
+<ng-template #nodata>
+    <h3 class="text-center">There are no orders</h3>
+</ng-template>

@@ -1,0 +1,13 @@
+﻿@section scripts {
+    <script src="~/dist/inline.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/polyfills.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/vendor.bundle.js" asp-append-version="true"></script>
+    <script src="~/dist/main.bundle.js" asp-append-version="true"></script>
+}
+
+<div class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">@(ViewBag.Message ?? "SPORTS STORE")</a>
+</div>
+<div class="p-1 bg-info">
+    <app-root></app-root>
+</div>

@@ -1,0 +1,24 @@
+﻿<div *ngIf="products?.length > 0; else nodata">
+    <div *ngFor="let product of products" class="card card-outline-primary m-1">
+        <div class="card-header">
+            <span class="h4">
+                {{product.name}}
+                <store-ratings [product]="product"></store-ratings>
+            </span>
+            <span class="float-right badge badge-pill badge-primary">
+                {{product.price  | currency:"USD":true }}
+            </span>
+        </div>
+        <div class="card-block">
+            <span class="card-text p-a-1">{{product.description}}</span>
+            <button class="float-right btn btn-sm btn-success"
+                    (click)="addToCart(product)">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</div>
+
+<ng-template #nodata>
+    <h4 class="m-1">Waiting for data...</h4>
+</ng-template>

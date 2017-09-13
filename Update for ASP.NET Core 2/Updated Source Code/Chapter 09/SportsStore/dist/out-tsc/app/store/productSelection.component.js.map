@@ -1,0 +1,1 @@
+{"version":3,"file":"productSelection.component.js","sourceRoot":"","sources":["../../../../ClientApp/app/store/productSelection.component.ts"],"names":[],"mappings":";;;;;;;;AAAA,sCAA0C;AAM1C,IAAa,yBAAyB;IAAtC;IAEA,CAAC;IAAD,gCAAC;AAAD,CAAC,AAFD,IAEC;AAFY,yBAAyB;IAJrC,gBAAS,CAAC;QACP,QAAQ,EAAE,gBAAgB;QAC1B,WAAW,EAAE,iCAAiC;KACjD,CAAC;GACW,yBAAyB,CAErC;AAFY,8DAAyB"}

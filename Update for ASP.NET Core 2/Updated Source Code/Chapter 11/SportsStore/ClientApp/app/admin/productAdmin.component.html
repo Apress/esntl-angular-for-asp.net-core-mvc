@@ -1,0 +1,63 @@
+﻿<table *ngIf="tableMode; else create" class="table table-sm table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Supplier</th>
+        <th>Price</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let p of products">
+        <ng-template [ngIf]="product?.productId != p.productId" [ngIfElse]="edit">
+            <td>{{p.productId}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.category}}</td>
+            <td>{{p.supplier?.name || '(None)'}}</td>
+            <td>{{p.price | currency:USD:true}}</td>
+            <td>
+                <button class="btn btn-sm btn-primary"
+                        (click)="selectProduct(p.productId)">
+                    Edit
+                </button>
+                <button class="btn btn-sm btn-danger"
+                        (click)="deleteProduct(p.productId)">
+                    Delete
+                </button>
+            </td>
+        </ng-template>
+    </tr>
+    <tfoot>
+        <tr>
+            <td colspan="6" class="text-center">
+                <button class="btn btn-primary"
+                        (click)="clearProduct(); tableMode = false">
+                    Create
+                </button>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<ng-template #edit>
+    <td colspan="6">
+        <admin-product-editor></admin-product-editor>
+        <div class="text-center">
+            <button class="btn btn-sm btn-primary" (click)="saveProduct()">
+                Save
+            </button>
+            <button class="btn btn-sm btn-info" (click)="clearProduct()">
+                Cancel
+            </button>
+        </div>
+    </td>
+</ng-template>
+
+<ng-template #create>
+    <admin-product-editor></admin-product-editor>
+    <button class="btn btn-primary" (click)="saveProduct()">
+        Save
+    </button>
+    <button class="btn btn-info" (click)="clearProduct()">
+        Cancel
+    </button>
+</ng-template>

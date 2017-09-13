@@ -1,0 +1,16 @@
+﻿<h2 class="text-center">Order Confirmation</h2>
+
+<div class="container">
+    <table *ngIf="order.orderConfirmation; else nodata" class="table m-2">
+        <tr><th>Order</th><td>{{order.orderConfirmation.orderId}}</td></tr>
+        <tr><th>Price</th><td>{{order.orderConfirmation.amount}}</td></tr>
+        <tr><th>Payment Code</th><td>{{order.orderConfirmation.authCode}}</td></tr>
+    </table>
+    <div class="text-center">
+        <button class="btn btn-primary" routerLink="/">Done</button>
+    </div>
+
+    <ng-template #nodata>
+        <h3 class="text-center">Submitting Order...</h3>
+    </ng-template>
+</div>

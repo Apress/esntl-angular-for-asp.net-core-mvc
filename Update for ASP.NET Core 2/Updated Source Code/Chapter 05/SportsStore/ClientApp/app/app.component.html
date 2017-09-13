@@ -1,0 +1,16 @@
+<table class="table table-sm table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Supplier</th>
+        <th>Ratings</th>
+    </tr>
+    <tr *ngFor="let product of products">
+        <td>{{product.name}}</td>
+        <td>{{product.category}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.supplier?.name || 'None'}}</td>
+        <td>{{product.ratings?.length || 0}}</td>
+    </tr>
+</table>

@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="ClientApp\app\models\cart.model.ts" />
+    <None Remove="ClientApp\app\models\order.model.ts" />
+    <None Remove="ClientApp\app\store\cartDetail.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\orderConfirmation.component.ts" />
+    <None Remove="ClientApp\boot.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\models\cart.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\order.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\cartDetail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\orderConfirmation.component.ts" />
+    <TypeScriptCompile Include="ClientApp\boot.ts" />
+  </ItemGroup>
+</Project>

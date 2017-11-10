@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\app\admin\admin.module.ts" />
+    <None Remove="ClientApp\app\admin\orderAdmin.component.ts" />
+    <None Remove="ClientApp\app\admin\overview.component.ts" />
+    <None Remove="ClientApp\app\admin\productAdmin.component.ts" />
+    <None Remove="ClientApp\app\admin\productEditor.component.ts" />
+    <None Remove="ClientApp\app\app.routing.ts" />
+    <None Remove="ClientApp\app\errorHandler.service.ts" />
+    <None Remove="ClientApp\app\models\cart.model.ts" />
+    <None Remove="ClientApp\app\models\configClasses.repository.ts" />
+    <None Remove="ClientApp\app\models\model.module.ts" />
+    <None Remove="ClientApp\app\models\order.model.ts" />
+    <None Remove="ClientApp\app\models\product.model.ts" />
+    <None Remove="ClientApp\app\models\rating.model.ts" />
+    <None Remove="ClientApp\app\models\repository.ts" />
+    <None Remove="ClientApp\app\models\supplier.model.ts" />
+    <None Remove="ClientApp\app\store\cartDetail.component.ts" />
+    <None Remove="ClientApp\app\store\cartSummary.component.ts" />
+    <None Remove="ClientApp\app\store\categoryFilter.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
+    <None Remove="ClientApp\app\store\checkout\orderConfirmation.component.ts" />
+    <None Remove="ClientApp\app\store\pagination.component.ts" />
+    <None Remove="ClientApp\app\store\productList.component.ts" />
+    <None Remove="ClientApp\app\store\productSelection.component.ts" />
+    <None Remove="ClientApp\app\store\ratings.component.ts" />
+    <None Remove="ClientApp\app\store\store.module.ts" />
+    <None Remove="ClientApp\app\structure\categoryFilter.component.ts" />
+    <None Remove="ClientApp\app\structure\productDetail.component.ts" />
+    <None Remove="ClientApp\app\structure\productTable.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="2.0.0" />    
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\app\admin\admin.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\admin\orderAdmin.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\admin\overview.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\admin\productAdmin.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\admin\productEditor.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\app.routing.ts" />
+    <TypeScriptCompile Include="ClientApp\app\errorHandler.service.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\cart.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\configClasses.repository.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\model.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\order.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\product.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\rating.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\repository.ts" />
+    <TypeScriptCompile Include="ClientApp\app\models\supplier.model.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\cartDetail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\cartSummary.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\categoryFilter.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutPayment.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\checkoutSummary.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\checkout\orderConfirmation.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\pagination.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\productList.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\productSelection.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\ratings.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\store\store.module.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\categoryFilter.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\productDetail.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\structure\productTable.component.ts" />
+  </ItemGroup>
+
+</Project>

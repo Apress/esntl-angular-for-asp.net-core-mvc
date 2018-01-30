@@ -1,0 +1,18 @@
+﻿<table class="table table-striped">
+    <tr><th colspan="2" class="bg-info">Product</th></tr>
+    <tr><th>Name</th><td>{{product?.name || 'No Data'}}</td></tr>
+    <tr><th>Category</th><td>{{product?.category || 'No Data'}}</td></tr>
+    <tr>
+        <th>Description</th>
+        <td>{{product?.description || 'No Data'}}</td>
+    </tr>
+    <tr><th>Price</th><td>{{product?.price  || 'No Data'}}</td></tr>
+    <tr><th colspan="2" class="bg-info">Supplier</th></tr>
+    <tr><th>Name</th><td>{{product?.supplier?.name}}</td></tr>
+    <tr><th>City</th><td>{{product?.supplier?.city}}</td></tr>
+    <tr><th>State</th><td>{{product?.supplier?.state}}</td></tr>
+    <tr><th>Products</th><td>{{product?.supplier?.products?.length}}</td></tr>
+</table>
+<div class="text-center">
+    <button class="btn btn-primary" routerLink="/table">Back</button>
+</div>

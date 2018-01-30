@@ -1,0 +1,20 @@
+<table class="table m-1">
+  <tr>
+    <td>There are {{products?.length || 0}} products for sale</td>
+    <td>
+      <button class="btn btn-sm btn-info btn-block"
+              routerLink="/admin/products">
+        Manage Products
+      </button>
+    </td>
+  </tr>
+  <tr>
+    <td>There are {{orders?.length || 0}} orders</td>
+    <td>
+      <button class="btn btn-sm btn-info btn-block"
+              routerLink="/admin/orders">
+        Manage Orders
+      </button>
+    </td>
+  </tr>
+</table>

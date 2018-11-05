@@ -16,7 +16,9 @@ No changes are required for this chapter.
 
 ## Chapter 2
 
-Follow the instructions in this chapter. Ensure that you have the latest version of Visual Studio 2017 or Visual Studio Code installed, as well as version 2.1.4 of the .NET Core SDK from https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.4-windows-x64-installer
+Follow the instructions in this chapter. Ensure that you have the latest version of Visual Studio 2017 or Visual Studio Code installed, as well as version 2.1.4 of the .NET Core SDK from:
+
+https://www.microsoft.com/net/download/thank-you/dotnet-sdk-2.1.4-windows-x64-installer
 ---
 
 ## Chapter 3
@@ -34,10 +36,10 @@ The Docker image used for SQL Server has changed. Use the following for Listing 
     database:
         image: "microsoft/mssql-server-linux"
         ports:
-        - 5100:1433
+          - 5100:1433
         environment:
-        - ACCEPT_EULA=Y
-        - SA_PASSWORD=mySecret123
+          - ACCEPT_EULA=Y
+          - SA_PASSWORD=mySecret123
 
 The way that Entity Framework Core works has changed and requires a different approach to preparing the database. Use the following for Listing 4-8:
 

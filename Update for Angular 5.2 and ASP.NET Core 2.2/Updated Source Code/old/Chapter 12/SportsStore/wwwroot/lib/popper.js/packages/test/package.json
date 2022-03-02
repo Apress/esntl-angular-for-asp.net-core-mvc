@@ -25,7 +25,7 @@
     "gitignore-to-glob": "^0.3.0",
     "gzipped": "^0.0.5",
     "jasmine-core": "^2.6.2",
-    "karma": "^1.7.0",
+    "karma": "^6.3.16",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^2.1.1",
     "karma-coverage": "^1.1.1",

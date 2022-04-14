@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "async": "^2.5.0",
+    "async": "^3.2.2",
     "babel-eslint": "^7.2.3",
     "bundlesize": "^0.14.4",
     "chalk": "^2.1.0",
